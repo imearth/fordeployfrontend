@@ -96,7 +96,7 @@ export default {
     },
     getMatchJoin() {
       var joinusername = accountObj.username;
-      const path = "http://localhost:3001/api/matchgateway/match/join/"+joinusername;
+      const path = "http://35.240.225.238:3001/api/matchgateway/match/join/"+joinusername;
       axios
         .get(path)
         .then(res => {

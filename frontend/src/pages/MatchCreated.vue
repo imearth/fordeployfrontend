@@ -97,7 +97,7 @@ export default {
 
     getMatchOwn() {
       var ownerusername = accountObj.username;
-      const path = "http://localhost:3001/api/matchgateway/match/owner/"+ownerusername;
+      const path = "http://35.240.225.238:3001/api/matchgateway/match/owner/"+ownerusername;
       axios
         .get(path)
         .then(res => {

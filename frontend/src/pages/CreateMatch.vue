@@ -85,7 +85,7 @@ export default {
   },
   methods: {
     postRegis(payload) {
-      const path = "http://localhost:3001/api/matchgateway/match/newmatch";
+      const path = "http://35.240.225.238:3001/api/matchgateway/match/newmatch";
       axios
         .post(path, payload)
         .then(res => {

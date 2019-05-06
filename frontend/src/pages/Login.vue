@@ -123,7 +123,7 @@ export default {
       this.login.inputPassword = "";
     },
     logins(payload) {
-      const path = "http://localhost:3001/api/usergateway/user/login";
+      const path = "http://35.240.225.238:3001/api/usergateway/user/login";
       axios
         .post(path, payload)
         .then(res => {
@@ -147,7 +147,7 @@ export default {
     getUserInformation(user_id) {
         console.log("info get id"+user_id);
          const path =
-          "http://localhost:3001/api/usergateway/user/id/" + user_id;
+          "http://35.240.225.238:3001/api/usergateway/user/id/" + user_id;
         axios
           .get(path)
           .then(res => {

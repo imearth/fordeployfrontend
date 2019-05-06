@@ -161,7 +161,7 @@ export default {
   },
   methods: {
     async getMatchDetail(){
-      const path = "http://localhost:3001/api/matchgateway/match/matchid/"+this.match_id;
+      const path = "http://35.240.225.238:3001/api/matchgateway/match/matchid/"+this.match_id;
       console.log(path)
       /*axios
         .get(path)
@@ -184,12 +184,12 @@ export default {
       this.match_detail = result.data
     },
     async GetTeam(){
-      const path = "http://localhost:3001/api/processgateway/process/"+this.match_id+"/allteam";
+      const path = "http://35.240.225.238:3001/api/processgateway/process/"+this.match_id+"/allteam";
       const result = await axios.get(path);
       this.match_team = result.data
     },
     async GetSchedule(){
-      const path = "http://localhost:3001/api/processgateway/process/"+this.match_id+"/allschedule";
+      const path = "http://35.240.225.238:3001/api/processgateway/process/"+this.match_id+"/allschedule";
       const result = await axios.get(path);
       this.match_schedule = result.data
     },

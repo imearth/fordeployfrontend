@@ -168,7 +168,7 @@ export default {
   methods: {
 
     getMatchMatching() {
-      const path = "http://localhost:3001/api/matchgateway/match/status/matching";
+      const path = "http://35.240.225.238:3001/api/matchgateway/match/status/matching";
       axios
         .get(path)
         .then(res => {
@@ -192,7 +192,7 @@ export default {
 
 
     getMatchRegistering() {
-      const path = "http://localhost:3001/api/matchgateway/match/status/registering";
+      const path = "http://35.240.225.238:3001/api/matchgateway/match/status/registering";
       axios
         .get(path)
         .then(res => {
@@ -215,7 +215,7 @@ export default {
     },
 
     getMatchEnd() {
-      const path = "http://localhost:3001/api/matchgateway/match/status/end";
+      const path = "http://35.240.225.238:3001/api/matchgateway/match/status/end";
       axios
         .get(path)
         .then(res => {

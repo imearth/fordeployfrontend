@@ -82,7 +82,7 @@ export default {
   },
   methods: {
     postRegis(payload) {
-      const path = "http://localhost:3001/api/processgateway/process/"+this.match_id+"/teamjoin";
+      const path = "http://35.240.225.238:3001/api/processgateway/process/"+this.match_id+"/teamjoin";
       axios
         .post(path, payload)
         .then(res => {
